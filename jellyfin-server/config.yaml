@@ -20,7 +20,7 @@ ports:
   8096/tcp: 8096
   8920/tcp: null
   1900/tcp: 1900
-  1900/UDP: 1900
+  1900/udp: 1900
 ports_description:
   8096/tcp: Jellyfin web and media port
   8920/tcp: Jellyfin TLS port, must be configured in the server first
