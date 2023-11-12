@@ -19,9 +19,11 @@ watchdog: http://[HOST]:8096/health
 ports:
   8096/tcp: 8096
   8920/tcp: null
-  1900: 1900
+  1900/tcp: 1900
+  1900/UDP: 1900
 ports_description:
   8096/tcp: Jellyfin web and media port
   8920/tcp: Jellyfin TLS port, must be configured in the server first
-  1900: dlna upnp
+  1900/tcp: dlna upnp
+  1900/udp: UDP dlna
 image: ghcr.io/mdvorak/jellyfin-server-{arch}
